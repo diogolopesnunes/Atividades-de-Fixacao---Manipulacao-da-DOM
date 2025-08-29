@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="input" />
+    <button id="botao" onclick="escrever()">Escrever</button>
+    <p id="papel"></p>
+
+    <script>
+        function escrever() {
+            var texto = document.getElementById("input").value      
+            document.getElementById("papel").innerHTML = texto
+        }
+    </script>
+    <!-- Ao clicar no botao, o valor dentro do input é colocado na variavel texto, e em seguida é colocada no paragrafo com id "papel" -->
+</body>
+</html>

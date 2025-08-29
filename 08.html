@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="datahora">Clique no botão para ver a data e hora atual</p>
+    <button onclick="verdatahora()">Ver data e hora atual</button>
+
+    <script>
+        function verdatahora() {
+            let data = new Date()
+            document.getElementById("datahora").innerHTML = data.getDate() + "/" + data.getMonth() + "/" + data.getFullYear() + "<br>" + data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds()
+        }
+    </script>
+</body>
+</html>

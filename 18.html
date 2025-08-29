@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pizza">Pizza de Abacaxi</p>
+    <button onclick="italizar()">Estilo italico</button>
+
+    <script>
+        function italizar() {
+            document.getElementById("pizza").style.fontStyle = "italic"
+            document.getElementById("pizza").innerHTML = "Pizza sem Abacaxi"
+        }
+    </script>
+</body>
+</html>

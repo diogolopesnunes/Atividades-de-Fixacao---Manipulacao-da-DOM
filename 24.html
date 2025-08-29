@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="trocarCor()" onmouseout="corPadrao()" id="colorido"></div>
+    <script>
+        document.getElementById("colorido").style.width = "100px"
+        document.getElementById("colorido").style.height = "100px"
+
+        function trocarCor() {
+            var corRandom = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            document.getElementById("colorido").style.backgroundColor = corRandom
+        }
+
+        function corPadrao() {
+            document.getElementById("colorido").style.backgroundColor = "white"
+        }
+    </script>
+</body>
+</html>

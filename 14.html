@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div"></div>
+    <button onclick="aumentar()">Esticar</button>
+    <script>
+        document.getElementById("div").style.backgroundColor = "yellow"
+        document.getElementById("div").style.width = "10px"
+        document.getElementById("div").style.height = "10px"
+        function aumentar() {
+            document.getElementById("div").style.width = "300px"
+        }
+    </script>
+</body>
+</html>

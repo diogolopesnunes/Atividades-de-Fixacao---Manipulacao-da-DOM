@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- DOM - Document Object Model -->
+
+    <p id="calopsita">Grub no pote</p>
+    <button onclick="mudarCor()">Quebrar</button>
+
+    <input onkeyup="digitar()" type="text" id="input" />
+
+    <script>
+        function mudarCor() {
+            var cor = document.getElementById("calopsita").style.color = "green"
+            var texto = document.getElementById("calopsita").innerHTML = "Grub libertado"
+            alert(texto)
+        }
+
+        function digitar() {
+            var texto = document.getElementById("input").value
+            document.getElementById("calopsita").innerHTML = texto
+        }
+    </script>
+</body>
+</html>
