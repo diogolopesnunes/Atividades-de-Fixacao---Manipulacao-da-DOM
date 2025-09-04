@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="semaforo"></div>
+    <button onclick="avermelhar()">Vermelho</button>
+    <button onclick="amarelar()">Amarelo</button>
+    <button onclick="esverdear()">Verde</button>
+
+    <script>
+        document.getElementById("semaforo").style.height = "300px"
+        document.getElementById("semaforo").style.width = "300px"
+        document.getElementById("semaforo").style.borderRadius = "90"
+        function avermelhar() {
+            document.getElementById("semaforo").style.backgroundColor = "red"
+        }
+        function amarelar() {
+            document.getElementById("semaforo").style.backgroundColor = "yellow"
+        }
+        function esverdear() {
+            document.getElementById("semaforo").style.backgroundColor = "lightGreen"
+        }
+    </script>
+</body>
+</html>

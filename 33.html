@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="escrito">
+    <button onclick="adicionar()">Adicionar</button>
+    <button onclick="remover()">Remover</button>
+    <ul id="lista"> 
+    </ul>
+
+    <script>
+        var lista = []
+
+        function exibir() {
+
+             document.getElementById("lista").innerHTML = ""
+            lista.forEach(function(item) {           
+                 document.getElementById("lista").innerHTML += "<li>" + item + "</li>"
+            })
+        }
+
+        function adicionar() {
+            var texto = document.getElementById("escrito").value
+            lista.push(texto)
+            exibir()
+            console.log(lista);
+            
+        }
+        function remover() {
+            lista.pop()
+            console.log(lista);
+            exibir()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Likes: </p> <p id="clicks">0</p>
+    <button onclick="clicar()">❤</button>
+
+    <script>
+        var clicks = 0
+        function clicar() {
+            clicks ++
+            document.getElementById("clicks").innerHTML = clicks
+        }
+    </script>
+</body>
+</html>

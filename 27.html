@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input oninput="escrever()" id="input" />
+    <button id="botao" oninput="escrever()">Escrever</button>
+    <p id="papel"></p>
+
+    <script>
+        function escrever() {
+            var texto = document.getElementById("input").value      
+            console.log(""+texto+"");
+            
+        }
+    </script>
+    <!-- Ao digitar, o valor dentro do input é colocado na variavel texto, e em seguida é colocada no console -->
+</body>
+</html>

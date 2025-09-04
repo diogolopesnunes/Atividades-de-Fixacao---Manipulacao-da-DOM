@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="texto">
+    <button onclick="mudartitulo()">Mudar título da página</button>
+
+    <script>
+        function mudartitulo() {
+            var texto = document.getElementById("texto").value
+            document.title = texto
+        }
+    </script>
+</body>
+</html>

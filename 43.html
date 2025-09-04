@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ninja">Ninja</p>
+    <button onclick="pisca()">Invisibilidade/Revisibilidade</button>
+
+    <script>
+        var invis = 0
+        function pisca() {
+            if (invis == 0) {
+                invis = 1
+                document.getElementById("ninja").style.display = "none"
+            } else {
+                invis = 0
+                document.getElementById("ninja").style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>

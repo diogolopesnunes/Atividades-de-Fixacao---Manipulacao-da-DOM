@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="imagem1" src="imagem1.png" alt="imagem 1" >
+    <img id="imagem2" src="imagem2.png" alt="qualquer coisa" >
+    <button onclick="trocar()">Trocar</button>
+
+    <script>
+        var imagem = 0
+        document.getElementById("imagem1").style.display = "none"
+        function trocar() {
+            if (imagem == 0) {
+                imagem = 1
+                document.getElementById("imagem2").style.display = "none"
+                document.getElementById("imagem1").style.display = "block"
+            } else {
+                imagem = 0
+                document.getElementById("imagem2").style.display = "block"
+                document.getElementById("imagem1").style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>

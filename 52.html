@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="imagem1" src="imagem1.png" alt="enzo cantor" >
+    <img id="imagem2" src="imagem2.png" alt="dog dodoi" >
+    <img id="imagem3" src="imagem3.png" alt="rodolfo">
+    <button onclick="trocar()">Trocar</button>
+
+    <script>
+        var imagem = 0
+        document.getElementById("imagem2").style.display = "none"
+        document.getElementById("imagem1").style.display = "none"
+        function trocar() {
+            if (imagem == 0) {
+                imagem = 1
+                document.getElementById("imagem3").style.display = "none"
+                document.getElementById("imagem2").style.display = "none"
+                document.getElementById("imagem1").style.display = "block"
+            } else if (imagem == 1) {
+                imagem = 2
+                document.getElementById("imagem3").style.display = "none"
+                document.getElementById("imagem2").style.display = "block"
+                document.getElementById("imagem1").style.display = "none"
+            } else if (imagem == 2) {
+                imagem = 0
+                document.getElementById("imagem3").style.display = "block"
+                document.getElementById("imagem2").style.display = "none"
+                document.getElementById("imagem1").style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>

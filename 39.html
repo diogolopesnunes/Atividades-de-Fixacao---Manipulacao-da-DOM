@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Largura:</p>
+    <p id="largura">Valor</p>
+    <p>Altura:</p>
+    <p id="altura">Valor</p>
+    <button onclick="mostrarTamanhoJanela"></button>
+
+    <script>
+        function mostrarTamanhoJanela() {
+            const largura = window.innerWidth;
+            const altura = window.innerHeight;
+
+            document.getElementById('largura').innerHTML = largura + "px";
+            document.getElementById('altura').innerHTML = altura + "px";
+        }
+    </script>
+</body>
+</html>
